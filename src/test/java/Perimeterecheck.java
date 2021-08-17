@@ -4,7 +4,14 @@ import org.junit.jupiter.api.Test;
 
 public class Perimeterecheck {
 
-
+    @Test
+    void tocheckperimeterofrectanglewithlengthfortyfiveandbreadththirtysix()
+    {
+        Rectangle rectangle = new Rectangle(45,36);
+        int currentvalue = rectangle.perimeter();
+        int expectedvalue = 162;
+        Assertions.assertEquals(expectedvalue,currentvalue);
+    }
 
 
 }
